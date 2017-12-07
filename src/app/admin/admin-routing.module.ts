@@ -8,7 +8,14 @@ import {DisciplinaComponent} from './disciplina/disciplina.component';
 import {TurmaComponent} from './turma/turma.component';
 import {CadastroDeDisciplinaComponent} from './cadastro-de-disciplina/cadastro-de-disciplina.component';
 import {CadastroDeTurmaComponent} from './cadastro-de-turma/cadastro-de-turma.component';
+import {CadastroDePessoasComponent} from './cadastro-de-pessoas/cadastro-de-pessoas.component';
 import {PaginaNaoEncontradaComponent} from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import {ListaDePessoasComponent} from './lista-de-pessoas/lista-de-pessoas.component';
+import {PessoaComponent} from './pessoa/pessoa.component';
+import {FuncionarioComponent } from './funcionario/funcionario.component';
+import {CadastroDeFuncionarioComponent} from './cadastro-de-funcionario/cadastro-de-funcionario.component';
+import {ListaDeFuncionariosComponent} from './lista-de-funcionarios/lista-de-funcionarios.component';
+
 
 const routes: Routes = [
   {
@@ -20,6 +27,15 @@ const routes: Routes = [
       {path: 'cadastrar-turma', component: CadastroDeTurmaComponent},
       {path: 'turmas', component: ListaDeTurmasComponent},
       {path: 'turmas/:id', component: TurmaComponent},
+      {path: 'pessoas', component: ListaDePessoasComponent},
+      {path: 'pessoas/:id', component: PessoaComponent},
+      {path: 'pessoas/:id/novo', component: CadastroDePessoasComponent},
+      {path: 'pessoas/:id/editar', component: CadastroDePessoasComponent},
+      {path: 'cadastrar-funcionario', component: CadastroDeFuncionarioComponent},
+      {path: 'funcionarios', component: ListaDeFuncionariosComponent},
+      {path: 'funcionarios/:id', component: FuncionarioComponent},
+      {path: 'funcionarios/:id/novo', component: CadastroDeFuncionarioComponent},
+      {path: 'funcionarios/:id/editar', component: CadastroDeFuncionarioComponent},
       {path: '', component: HomeComponent},
       {path: '**', component: PaginaNaoEncontradaComponent}
   ]}

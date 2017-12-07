@@ -16,7 +16,15 @@ import {ListaDeTurmasComponent} from './lista-de-turmas/lista-de-turmas.componen
 import {TurmaComponent} from './turma/turma.component';
 import {DisciplinasService} from './disciplinas.service';
 import {TurmasService} from './turmas.service';
-import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import {PessoasService} from './pessoas.service';
+import {CadastroDePessoasComponent} from './cadastro-de-pessoas/cadastro-de-pessoas.component';
+import {PessoaComponent} from './pessoa/pessoa.component';
+import {ListaDePessoasComponent} from './lista-de-pessoas/lista-de-pessoas.component';
+import {FuncionariosService} from './funcionarios.service';
+import {FuncionarioComponent} from './funcionario/funcionario.component';
+import {CadastroDeFuncionarioComponent} from './cadastro-de-funcionario/cadastro-de-funcionario.component';
+import {ListaDeFuncionariosComponent} from './lista-de-funcionarios/lista-de-funcionarios.component';
+import {PaginaNaoEncontradaComponent} from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 @NgModule({
   imports: [
@@ -36,6 +44,12 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
     ListaDeDisciplinasComponent,
     ListaDeTurmasComponent,
     TurmaComponent,
+    CadastroDePessoasComponent,
+    PessoaComponent,
+    ListaDePessoasComponent,
+    FuncionarioComponent,
+    CadastroDeFuncionarioComponent,
+    ListaDeFuncionariosComponent,
     PaginaNaoEncontradaComponent
   ],
   providers: [
