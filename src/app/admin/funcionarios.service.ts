@@ -54,7 +54,7 @@ export class FuncionariosService {
   }
 
   save(id: number, pessoaId: number, tipo: string, cargoId: number) {
-    const funcionario = {'id': id, 'pessoaId': pessoaId, tipo: tipo, cargoId: cargoId};
+    const funcionario = {'id': id, 'pessoaId': pessoaId, tipo: tipo, 'cargoId': cargoId};
     return this.http.post(this.API_URL + '/funcionarios', funcionario);
   }
 

@@ -17,6 +17,8 @@ import {TurmaComponent} from './turma/turma.component';
 import {DisciplinasService} from './disciplinas.service';
 import {TurmasService} from './turmas.service';
 import {PessoasService} from './pessoas.service';
+import {CargosService} from './cargos.service';
+import {FuncoesService} from './funcoes.service';
 import {CadastroDePessoasComponent} from './cadastro-de-pessoas/cadastro-de-pessoas.component';
 import {PessoaComponent} from './pessoa/pessoa.component';
 import {ListaDePessoasComponent} from './lista-de-pessoas/lista-de-pessoas.component';
@@ -54,7 +56,11 @@ import {PaginaNaoEncontradaComponent} from './pagina-nao-encontrada/pagina-nao-e
   ],
   providers: [
     DisciplinasService,
-    TurmasService
+    TurmasService,
+    PessoasService,
+    FuncionariosService,
+    FuncoesService,
+    CargosService
   ]
 })
 export class AdminModule {
